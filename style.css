@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+:root {
+  --background: #f2f2f2;
+  --heading: #4f4f4f;
+  --subheading: #333333;
+  --paragraph: #828282;
+  --bgline: #c4c4c4;
+  --btn: #2f80ed;
+  --default: #ffffff;
+  --childheading: #000000;
+  --othercolor: #e0e0e0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  max-width: 1270px;
+  min-width: 320px;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--heading);
+}
+
+h4,
+.profile p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--heading);
+}
+
+h5,
+p,
+a {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--paragraph);
+}
+
+a {
+  color: var(--btn);
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: var(--default);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 10px 30px rgb(51 51 51 / 10%);
+}
+
+section {
+  margin-top: 50px;
+}
+
+.profile h3 {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile p {
+  color: var(--paragraph);
+}
+
+.contacts {
+  margin: 20px 0 40px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.contact p {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  color: var(--heading);
+}
+
+.fa-solid {
+  font-size: 20px;
+}
+
+.frontend {
+  margin: 35px 0;
+}
+
+.line-1 {
+  background-color: var(--bgline);
+  height: 10px;
+  border-radius: 12px;
+}
+
+.line-2 {
+  background-color: var(--btn);
+  width: 0%;
+  height: 10px;
+  border-radius: 12px;
+  position: relative;
+  bottom: 10px;
+  transition: all 2s ease-in-out;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 7px 0;
+}
+
+.item p {
+  color: var(--heading);
+}
+
+.lines {
+  grid-column: 2/15;
+  margin-top: 4px;
+}
+
+.listing h4 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.heading {
+  margin: 0 0 17px;
+}
+
+.project-item {
+  margin: 0 0 35px;
+}
+
+.tagged {
+  display: flex;
+  flex-direction: row;
+}
+
+.tagged p {
+  color: var(--heading);
+  margin: 0 10px 0 0;
+}
+
+.project-description h3,
+.blog-article h3 {
+  color: var(--subheading);
+  margin: 15px 0;
+  max-width: 149px;
+}
+
+.buttons button {
+  padding: 10px 30px;
+  margin: 30px 6px 0 0;
+  border-radius: 12px;
+  border: none;
+  color: var(--default);
+  background: var(--btn);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid var(--btn);
+}
+
+.buttons button:hover {
+  background: var(--default);
+  color: var(--btn);
+  border: 1px solid var(--btn);
+}
+
+.buttons button:nth-child(2) {
+  color: var(--btn);
+  background: var(--default);
+  border: 1px solid var(--btn);
+}
+
+.buttons button:nth-child(2):hover {
+  color: var(--default);
+  background: var(--btn);
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.experience .description {
+  grid-column: 2/4;
+}
+
+.experience img {
+  max-width: 60px;
+  margin-top: 15px;
+}
+
+.adidas img {
+  max-width: 70px;
+}
+
+.nivea img {
+  max-width: 100px;
+  margin: 0;
+}
+
+.description h4 {
+  font-weight: 600;
+  line-height: 20px;
+  margin: 10px 0 23px 0;
+}
+
+.blog-article h4 {
+  color: var(--othercolor);
+}
+
+.blog-banner img {
+  margin: 20px 0 0;
+}
+
+.hobbies-item img {
+  height: 140px;
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+.hobbies-item h4 {
+  color: var(--subheading);
+  font-weight: 600;
+}
+
+footer p {
+  text-align: center;
+  margin: 100px 0;
+  padding: 0 0 10px;
+}
+
+footer a {
+  text-decoration: underline;
+  color: var(--paragraph);
+  font-weight: 700;
+}
+
+.swiper {
+  max-width: 852px;
+  max-height: 560px;
+  cursor: pointer;
+}
+
+.img-profile {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.projects,
+.blogs {
+  max-width: 862px;
+  margin: 0 auto 17px;
+}
+
+.project-banner img {
+  max-width: 322px;
+  margin: 0 auto;
+}
+
+.blog-banner img {
+  max-width: 422px;
+  height: 317px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.box {
+  margin: 30px auto;
+}
+
+.blog-wrap {
+  margin: 20px 0;
+}
