@@ -147,3 +147,9 @@
     grid-row: 23 / span 1;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .portfolio {
+    grid-template-rows: repeat(105, 15px);
+  }
+}
